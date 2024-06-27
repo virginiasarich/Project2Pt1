@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  background-color: #2e8b57; /* MediumSeaGreen */
+  color: white;
+  padding: 1rem;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section and List Styles */
+h3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+ol, ul {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 800px;
+}
+
+ol li, ul li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Image Styles */
+.smaller-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#image-toggle {
+  text-align: center;
+}
+
+#toggle-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Optional: Add cursor pointer on hover */
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  ol, ul {
+      padding: 0 0.5rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+}
+
+
+  

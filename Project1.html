@@ -1,0 +1,113 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="Project1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Project2Pt1.js"></script>
+    <h1>
+      My final project!
+    </h1>
+
+  </head>
+
+  <body>
+
+    <h3>
+      A little bit about my project:
+    </h3>
+    <ol>
+      <li> My app will provide horseback riders in Victoria with a collection of trails that are accessible for horses.</li>
+      <li>The basic overview of a trail shown will be on a 2D map and, if I had the skills, I would love to provide 3D views of trails as well so that riders could get a sense of the terrain.</li>
+      <li>This webpage will be used by riders in the Victoria area to learn more about what trails are accessible to them and their horses. </li>
+      <li>This app is needed for horseback riders who don't know what trails are accessible for their horses.</li>
+      <li>To emotionally engage the users, I would like to create interactive 3D maps like I mentioned earlier. The interactive map would allow the user to view sections of the trails and the terrain. It would also be really cool to make the map interactive so that riders could connect with others' experiences as they share photos and stories of their rides. </li>
+      <li>
+        <ul>
+          <li>Incroporating XR would allow users to view the map in a way that traditional maps can't. They will be able to see the trail conditions better, helping them make more informed decisions for where to take their horses.</li>
+          <li> XR and the ability to share stories on an interactive map creates opportunity for community building and connects riders through their shared experiences.</li>
+          <li> XR can also help riders prepare better for their trail rides, increasing safety for riders and their horses.</li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li> Using 3D is certainly useful for parts of this project. For one, it gives riders a realistic preview of the trails, like elevation and footing, which is helpful for preparation.</li>
+          <li> 3D also helps to make a more interactive map, increasing wepage usage. The more riders use the webpage and share the experiences, the more useful the page becomes.</li>
+          <li> However, using 3D definitely makes for a more time consuming design and implementation process, and may make it harder for some users to navigate the site.</li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>Using AR could allow riders to use their smartphones for real-time directions. This would be beneficial if riders encounter fallen trees or other obstacles that require a detour from the main trial.</li>
+          <li> Mixed reality could show real-time weather conditions on a user's map, increasing safety. </li>
+          <li> VR can be used to show the rider immersive previews of the trails, helping them to best prepare for the terrain. </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li> Yes, this idea already exists in 2D. Most trail maps, either printed or online, will say whether they are horse accessible or not. Rider forums are also places for riders to share photos of their rides and trail conditions. However, this idea doesn't necessarily exist as an amalgamated webpage form.</li>
+          <li>It's likely that a 3D version of this idea exists, which allows people to view and interact with the map to see the terrain. However, this might not exist specifically for the intent of trail riding horses. </li>
+          <li> If I only made this idea in 2D I wouldn't be able to provide the same interactive experience for users. They wouldn't be able to explore and get a preview of a trail's terrain in the same way.</li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li> If I create a useful website that helps riders better prepare for the trail, I will get more interaction and engagement.  </li>
+          <li> If I have a simplified search bar and filters that helps riders find the appropriate trails for their level and interests, then the site becomes more useful for its users. </li>
+          <li> Making an attractive and engaging website will make users share the page to their friends, increasing usage. </li>
+          <li> If the site provides useful information that helps riders better prepare for the trails, this website will help reduce injuries and accidents. </li>
+          <li> If I name the site "Horsing Around Victoria," then the site becomes findable for those interested in trail riding around Victoria.</li>
+          <li> If I make the site sizable to any screen then it will be used more often as it remains accessible on the trail. </li>
+        </ul>
+
+
+
+
+      </li>
+      <li> Empathy Map
+        <img src="EmpathyMap.png" class="smaller-image" style="display: block; margin: 0 auto;">
+      </li>
+
+      <li> Data Model Idea:
+        <br>
+  <ol> 
+    <li> Trail</li>
+      <ul>
+        <li>Name: String</li>
+        <li>Description: String</li>
+        <li>Location: String </li> 
+        <li> Difficulty: String </li>
+        <li> GoogleMapsLink: String</li>
+        <li> Length: Number (in kilometers)</li>
+        <li> Duration: String (estimated time to complete) </li> 
+        <li> Best Season: String </li> 
+        <li> Elevation Gain: Number (in meters) </li>
+      </ul>
+    <li>User</li>
+      <ul>
+        <li>Username: String</li>
+        <li> Email: String</li>
+        <li>Favorite Trails: Array of trail IDs </li>
+      </ul>
+    <li>Review</li>
+      <ul>
+        <li>User Id: User ID </li>
+        <li>Trail Id: Trail ID </li>
+        <li>Rating: Number (e.g., 1-5)</li>
+        <li>Comment: String</li>
+      </ul>
+    <li>Relationships</li>
+      <ul>
+        <li>User to Trails: Many-to-Many (a user can have many favorite trails and a trail can be favorited by many users). </li>
+        <li>Trail to Reviews: One-to-Many (a trail can have many reviews, each review is associated with one trail). </li>
+
+      </ul>
+    </li>
+  </ol>
+
+  <li> Wireframe (click to switch images) </li>
+  <div id="image-toggle">
+    <img src="image1.jpg" alt="Image 1" id="toggle-image">
+</div>
+  </body>
+
+</html>
